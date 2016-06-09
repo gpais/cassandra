@@ -39,12 +39,12 @@ ADD start.sh  /start.sh
 
 RUN chmod 755 /start.sh
 
-VOLUME ["/opt/dropwizard/"]
+VOLUME ["/opt/dropwizard/","/var/log/"]
 
 #WORKDIR /home/logstash
-
 CMD ["/bin/bash", "/start.sh"]
 
+run echo "asdasd 2"
 EXPOSE 80
 EXPOSE 514
 EXPOSE 5043
